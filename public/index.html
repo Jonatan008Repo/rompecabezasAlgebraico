@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/sweetalert.css" rel="stylesheet" />
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/Style.css" rel="stylesheet" />
+    <title>RompecabezasAlgebraico</title>
+    <meta
+			name="description"
+			content="
+                Aplicación web que permite al usuario resolver rompecabezas algebraicos de cuadriláteros, en los que se le presentan expresiones algebraicas que representan el área de un cuadrilátero, y debe de seleccionar los cuadriláteros que forman dicha expresión, para posteriormente evaluar su respuesta, y en caso de ser correcta, mostrar los componentes geométricos de la expresión algebraica inicial.
+            " />
+</head>
+<body>
+    <div class="puzzle">
+        <div class="container-fluid inicioP  affix">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4">
+                    <br />
+                    <img src="img/logo.png" class="img-responsive" />
+                </div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-1">
+                    <br />
+                    <img src="img/pregunta.png" class="img-responsive" data-toggle="modal" data-target="#myModal" />
+                </div>
+                <div class="col-xs-2"></div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-4">
+                    <img src="img/btn_binomio.png" class="img-responsive" id="boton1" style="padding:10px;" />
+                </div>
+                <!--<div class="col-xs-2"></div>-->
+                <div class="col-xs-4">
+                    <img src="img/btn_formula.png" class="img-responsive" id="boton2" style="padding:10px;" />
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+        </div>
+        <img src="img/logo_small.png" class="affix logo" />
+        <div class="affix logo2">
+            <img id="atras" src="img/atras.png" class="img-responsive" />
+            <img src="img/pregunta.png" class="img-responsive" data-toggle="modal" data-target="#myModal"/>
+        </div>
+        <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" href="#home">Rompecabezas por binomio</a></li>
+            <li><a data-toggle="tab" href="#menu1">Rompecabezas por formula</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade">
+                <div class="">
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="areaP"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-10">
+                                    <div class="row fondo">
+                                        <div id="table1" class="col-xs-6">
+                                            <div class="areaP1">
+                                                <table>
+                                                    <tr class="tr0"></tr>
+                                                    <tr class="tr1"></tr>
+                                                    <tr class="tr2"></tr>
+                                                    <tr class="tr3"></tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div id="table2" class="col-xs-6">
+                                            <div class="respuesta2">
+                                                <span class="l1"></span>
+                                                <div>
+                                                    <table>
+                                                        <tr class="tr0"></tr>
+                                                        <tr class="tr1"></tr>
+                                                        <tr class="tr2"></tr>
+                                                        <tr class="tr3"></tr>
+                                                    </table>
+                                                </div>
+                                                <span class="l2"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <img class="evap img-responsive disabled" src="img/EvaluarPoligono.png" disabled="disabled" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="respuesta1">
+                                        <BR />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade ">
+                <div class="">
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="img/Formula.png" class="img-responsive" />
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="poligonoA">
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 ">
+                                    <div class="caso2p"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="poligonoP"><br /></div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-10 caso2">
+                                    <img src="img/Evaluar.png" class="affix evaluarimg" />
+                                    <div class="row">
+                                        <div id="tabla1" class="">
+                                            <table class="t1">
+                                                <tr class="tr0"></tr>
+                                                <tr class="tr1"></tr>
+                                                <tr class="tr2"></tr>
+                                                <tr class="tr3"></tr>
+                                            </table>
+                                        </div>
+                                        <div id="tabla2" class="">
+                                            <table class="t2">
+                                                <tr class="tr0"></tr>
+                                                <tr class="tr1"></tr>
+                                                <tr class="tr2"></tr>
+                                                <tr class="tr3"></tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <img src="img/Nuevoreactivo.png" class="genrarp img-responsive" />
+                                    <br />
+                                    <img src="img/EvaluarPoligono.png" class="evap2 img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Tutorial</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="img/btn_binomio.png" class="img-responsive" />
+                        </div>
+                    </div>
+                    <br />
+                    <p>
+                        Para la opción <strong>“Rompecabezas por binomio”</strong>, debes de seleccionar al menos dos de los cuadriláteros, y posteriormente presionar el botón <strong>Evaluar polígono</strong>, que unirá los polígonos lado a lado, para crear un cuadrilátero más grande, cuyos lados y expresión algebraica de su área aparecerá en pantalla.
+                    </p>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="img/btn_formula.png" class="img-responsive" />
+                        </div>
+                    </div>
+                    <br />
+                    <p>
+                        En la opción <strong>“Rompecabezas por fórmula”</strong>, se te presentará una expresión algebraica que representa el área del cuadrilátero, la cual debes de recrear geométricamente, seleccionando los polígonos necesarios para ello, para finalizar seleccionando el botón <strong>Evaluar polígono</strong>, que te dirá si fue correcta tu selección de cuadriláteros, presentando los componentes geométricos de las áreas que forman la expresión inicial. El botón <strong>Nuevo reactivo</strong> te proporcionará una nueva expresión algebraica para resolver. Recuerda que el área de un rectángulo es base por altura
+                    </p>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
