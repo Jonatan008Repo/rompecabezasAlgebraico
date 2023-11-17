@@ -3,7 +3,6 @@
     background-size:100% auto;
     /*background-repeat:no-repeat;*/
 }
-
 .inicioP {
     z-index:200;
     background-image: url('../img/fondo.jpg');
@@ -64,7 +63,6 @@
     border: 2px solid;
     /*font-size: 12px;*/
 }
-
     .cuadrado > .l1, .cuadrado > .l2 {
         position: absolute;
         display: block;
@@ -72,7 +70,6 @@
         /*height: 100%;
         width: 100%*/
     }
-
     .cuadrado > .l1 {
         /*background-color: rgba(255, 9, 9, 0.59);*/
         top: 20%;
@@ -80,7 +77,6 @@
         text-align: right;      
         width:9px;
     }
-
     .cuadrado > .l2 {
         /*background-color: rgba(0, 0, 255, 0.70);*/
         bottom: -12px;
@@ -100,9 +96,7 @@
         color: white !important;
         background-color: #43395f;
         border-bottom-color: white;
-    
     }
-
     }
     .nav a:hover {
         background-color: #654a7e !important;
@@ -117,17 +111,14 @@
 .areaP1 {
     margin: 5%;
 }
-
     .areaP1 tr {
         width: 100%;
         line-height: 0;
     }
-
     .areaP1 .cuadrado {
         margin: 0px;
         line-height: 1.42857143;
     }
-
     .areaP1 #hide1.cuadrado {
         border-color: transparent;
     }
@@ -213,7 +204,6 @@
         left: 20%;
         height: 10px;
     }
-
 .t2 button.cuadrado .l2{
     bottom:-20px;
 }
@@ -227,49 +217,42 @@
     border-right-color: #c63600;
     color: #c63600;
 }
-
 .lado1-b, .lado1-b > div:first-child {
     height: 35px;
     border-left-color: #4e4c4c;
     border-right-color: #4e4c4c;
     color: #4e4c4c;
 }
-
 .lado1-c, .lado1-c > div:first-child {
     height: 45px;
     border-left-color: #006d00;
     border-right-color: #006d00;
     color: #006d00;
 }
-
 .lado1-d, .lado1-d > div:first-child {
     height: 55px;
     border-left-color: #006767;
     border-right-color: #006767;
     color: #006767;
 }
-
 .lado2-a, .lado2-a > div:last-child {
     width: 25px;
     border-top-color: firebrick;
     border-bottom-color: firebrick;
     color: firebrick;
 }
-
 .lado2-b, .lado2-b > div:last-child {
     width: 35px;
     border-top-color: #659602;
     border-bottom-color: #659602;
     color: #659602;
 }
-
 .lado2-c, .lado2-c > div:last-child {
     width: 45px;
     border-top-color: darkorchid;
     border-bottom-color: darkorchid;
     color: darkorchid;
 }
-
 .lado2-d, .lado2-d > div:last-child {
     width: 55px;
     border-top-color: #fc5c21;
@@ -354,7 +337,6 @@
     }
 }
 @media screen and (min-height: 384px) {   
-
     .lado1-a, .lado1-a > div:first-child {
         height: 30px;
     }
@@ -392,11 +374,9 @@
     body {
         font-size: 15px;
     }
-
     .nav > li > a {
         padding: 15px 33px;
     }
-
     .fondo {
         padding: 5% 0% 5% 17%;
     }
@@ -408,35 +388,27 @@
     .lado1-a, .lado1-a > div:first-child {
         height: 40px;
     }
-
     .lado1-b, .lado1-b > div:first-child {
         height: 50px;
     }
-
     .lado1-c, .lado1-c > div:first-child {
         height: 60px;
     }
-
     .lado1-d, .lado1-d > div:first-child {
         height: 70px;
     }
-
     .lado2-a, .lado2-a > div:last-child {
         width: 40px;
     }
-
     .lado2-b, .lado2-b > div:last-child {
         width: 50px;
     }
-
     .lado2-c, .lado2-c > div:last-child {
         width: 60px;
     }
-
     .lado2-d, .lado2-d > div:last-child {
         width: 70px;
     }
-
     .areaP {
         padding: 11px 40px 19px 26px;
     }
@@ -445,7 +417,6 @@
     body {
         font-size: 18px;
     }
-   
 }
 @media screen and (min-height: 768px) {
     body {
@@ -461,31 +432,24 @@
     .lado1-a, .lado1-a > div:first-child {
         height: 45px;
     }
-
     .lado1-b, .lado1-b > div:first-child {
         height: 55px;
     }
-
     .lado1-c, .lado1-c > div:first-child {
         height: 65px;
     }
-
     .lado1-d, .lado1-d > div:first-child {
         height: 75px;
     }
-
     .lado2-a, .lado2-a > div:last-child {
         width: 45px;
     }
-
     .lado2-b, .lado2-b > div:last-child {
         width: 55px;
     }
-
     .lado2-c, .lado2-c > div:last-child {
         width: 65px;
     }
-
     .lado2-d, .lado2-d > div:last-child {
         width: 75px;
     }
@@ -497,10 +461,7 @@
     body {
         background-image: url("../img/horizontal.jpg");
     }
-
     .puzzle {
         visibility: hidden;
     }
-
-  
 }
